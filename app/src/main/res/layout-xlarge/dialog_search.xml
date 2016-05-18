@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9f000000"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50sp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="#dfdfdf" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fafafa" >
+
+            <TextView
+                android:id="@+id/tvBookSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Book Search"
+                android:textColor="@android:color/black"
+                android:textSize="50sp"
+                android:padding="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fafafa"
+            android:layout_marginTop="5sp">
+
+            <TextView
+                android:id="@+id/tvProductSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Product Search"
+                android:textColor="@android:color/black"
+                android:textSize="50sp"
+                android:padding="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#b9baba" >
+
+            <TextView
+                android:id="@+id/tvCancelSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Cancel"
+                android:textColor="@android:color/white"
+                android:textSize="50sp"
+                android:padding="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

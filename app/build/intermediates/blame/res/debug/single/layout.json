@@ -1,0 +1,182 @@
+[
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/qr_create.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/qr_create.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/history_item.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/history_item.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/qr_pick_bookmark.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/qr_pick_bookmark.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/qr_location.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/qr_location.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/main_three.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/main_three.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/qr_profile.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/qr_profile.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/dialog_rate.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/dialog_rate.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_include.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_activity_chooser_view_include.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/main_two.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/main_two.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/qr_bookmarks.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/qr_bookmarks.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_simple_dropdown_hint.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_simple_dropdown_hint.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/scan_result.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/scan_result.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/qr_phone.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/qr_phone.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/qr_free_text.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/qr_free_text.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/list_bookmark_item.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/list_bookmark_item.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/search_product.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/search_product.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/main_one.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/main_one.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/qr_pick_phone.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/qr_pick_phone.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/custom_list_history.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/custom_list_history.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/listview_qr_item.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/listview_qr_item.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/qr.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/qr.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/list_contact_item.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/list_contact_item.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout/dialog_search.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout/dialog_search.xml"
+    }
+]

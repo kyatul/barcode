@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/animator/slide_in_down.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/animator/slide_in_down.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/animator/slide_out_top.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/animator/slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/animator/slide_in_right.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/animator/slide_in_right.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/animator/no_animation.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/animator/no_animation.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/animator/slide_out_down.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/animator/slide_out_down.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/animator/slide_out_right.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/animator/slide_out_right.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/animator/slide_out_left.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/animator/slide_out_left.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/animator/slide_in_top.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/animator/slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/animator/slide_in_left.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/animator/slide_in_left.xml"
+    }
+]

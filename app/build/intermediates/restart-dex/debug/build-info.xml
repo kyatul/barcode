@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="22"
+    density="xhdpi"
+    format="7"
+    timestamp="206503799731181" >
+
+    <task
+        name="javac"
+        duration="18199" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="791" />
+    <task
+        name="verifier"
+        duration="75" />
+
+    <artifact
+        location="/Users/atul/Workspace/BarcodeScanner/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="206503799731181" >
+        <artifact
+            location="/Users/atul/Workspace/BarcodeScanner/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

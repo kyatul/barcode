@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9f000000"
+     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="#dfdfdf" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fafafa" >
+
+            <TextView
+                android:id="@+id/tvheadRate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Rate this App"
+                android:textColor="@android:color/black"
+                android:textSize="70sp"
+                android:padding="25sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="6dp" >
+        
+        <TextView
+            android:id="@+id/tvRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="#fafafa"
+            android:text="If you enjoy using our app would you mind taking a moment to rate it ? It won't take more than a minute."
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:padding="10sp" />
+
+        <ImageView
+            android:id="@+id/ivRateYes"
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            android:layout_above="@+id/ivRateCancel"
+            android:layout_marginTop="6dp"
+            android:background="#fafafa"
+            android:src="@drawable/yes_dark" />
+
+        <ImageView
+            android:id="@id/ivRateCancel"
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="6dp"
+            android:background="#fafafa"
+            android:src="@drawable/no_dark" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

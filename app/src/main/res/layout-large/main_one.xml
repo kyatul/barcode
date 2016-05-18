@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tab1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/headScan"
+        android:layout_width="match_parent"
+        android:layout_height="75sp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/slab2" >
+        <ImageView
+            android:id="@+id/ivContact"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/contact" />
+
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ivContact"
+            android:text="Help"
+            android:textColor="@android:color/white"
+            android:textSize="33sp" />
+
+        <ImageView
+            android:id="@+id/ivIcon0"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tvHeadScan"
+            android:src="@drawable/history" />
+
+        <TextView
+            android:id="@id/tvHeadScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10sp"
+            android:text="History"
+            android:textColor="@android:color/white"
+            android:textSize="33sp" />
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headScan"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2074945741246452/1891842120" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/iv_button"
+            android:layout_width="match_parent"
+            android:layout_height="170sp"
+            android:layout_marginTop="15sp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/button" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_button"
+            android:layout_marginTop="20sp"
+            android:gravity="center"
+            android:paddingBottom="20sp"
+            android:text="___________________________________"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <ImageView
+            android:id="@+id/iv_create"
+            android:layout_width="match_parent"
+            android:layout_height="170sp"
+            android:layout_below="@id/tvInfo"
+            android:layout_marginTop="15sp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_create" >
+        </ImageView>
+    </RelativeLayout>
+
+</RelativeLayout>

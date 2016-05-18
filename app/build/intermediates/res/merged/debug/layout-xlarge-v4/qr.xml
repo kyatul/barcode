@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa" >
+
+    <RelativeLayout
+        android:id="@+id/headFreeText"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_alignParentTop="true"
+        android:background="#b9baba" >
+
+        <ImageView
+            android:id="@+id/ivShareFreeText"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/share" />
+
+        <Button
+            android:id="@+id/btShareFreeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ivShareFreeText"
+            android:background="#b9baba"
+            android:paddingRight="10sp"
+            android:text="Share"
+            android:textColor="@android:color/white"
+            android:textSize="50sp" />
+
+        <ImageView
+            android:id="@+id/ivSave"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btSaveFreeText"
+            android:src="@drawable/save" />
+
+        <Button
+            android:id="@id/btSaveFreeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#b9baba"
+            android:paddingRight="10sp"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:textSize="50sp" />
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headFreeText"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2074945741246452/1891842120" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adViewQR" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/qrCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20sp"
+                android:src="@drawable/search" />
+
+            <TextView
+                android:id="@+id/qrText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qrCode"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20sp"
+                android:text="text"
+                android:textSize="50sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

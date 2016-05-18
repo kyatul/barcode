@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/contact.png",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/drawable-ldpi/contact.png"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/background.png",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/drawable-ldpi/background.png"
+    }
+]

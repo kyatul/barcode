@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_alignParentTop="true"
+        android:background="#b9baba" >
+
+        <TextView
+            android:id="@+id/tvbackQRFreeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10sp"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            android:textSize="50sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20sp" >
+
+        <EditText
+            android:id="@+id/etFreeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fafafa"
+            android:hint="Enter Free Text"
+            android:padding="25sp"
+            android:textSize="60sp" />
+
+        <Button
+            android:id="@+id/btCreateFreeText"
+            android:layout_below="@id/etFreeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:background="#b9baba"
+            android:padding="25sp"
+            android:text="Create"
+            android:textColor="@android:color/white"
+            android:textSize="60sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

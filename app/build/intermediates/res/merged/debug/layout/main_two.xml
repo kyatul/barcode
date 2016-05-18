@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tab2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+   <RelativeLayout
+        android:id="@+id/headHistory"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:background="@drawable/slab2"
+        android:layout_alignParentTop="true" >
+        
+        <ImageView
+            android:id="@+id/ivIcon1"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tvHeadHistory"
+            android:src="@drawable/delete" />
+        
+        <TextView 
+            android:id="@id/tvHeadHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10sp"
+            android:textSize="23sp"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"/>
+        
+        <ImageView
+            android:id="@+id/ivHome4"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/email" />
+
+        <TextView
+            android:id="@+id/tvHome4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivHome4"
+            android:layout_centerVertical="true"
+            android:paddingRight="10sp"
+            android:text="Send History"
+            android:textColor="@android:color/white"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headHistory"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2074945741246452/1891842120" />
+
+    <TextView
+        android:id="@+id/tvNoScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nothing scanned yet!"
+        android:gravity="center_horizontal"
+        android:textColor="#ff959595"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adView2"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp" >
+    </ListView>
+
+
+</RelativeLayout>

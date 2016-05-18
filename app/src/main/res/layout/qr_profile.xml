@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:background="#b9baba" >
+
+        <TextView
+            android:id="@+id/tvbackQRProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10sp"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10sp" >
+
+            <EditText
+                android:id="@+id/etFName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:background="#fafafa"
+                android:hint="First Name"
+                android:padding="8sp"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/etLName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etFName"
+                android:layout_marginTop="10sp"
+                android:background="#fafafa"
+                android:hint="Last Name"
+                android:padding="8sp"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/etTelephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etLName"
+                android:layout_marginTop="10sp"
+                android:background="#fafafa"
+                android:hint="Telephone"
+                android:inputType="number"
+                android:padding="8sp"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etTelephone"
+                android:layout_marginTop="10sp"
+                android:background="#fafafa"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:padding="8sp"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/etAddress1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etEmail"
+                android:layout_marginTop="10sp"
+                android:background="#fafafa"
+                android:hint="Address Line 1"
+                android:padding="8sp"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/etAddress2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etAddress1"
+                android:layout_marginTop="10sp"
+                android:background="#fafafa"
+                android:hint="Address Line 2"
+                android:padding="8sp"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/etAddress3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etAddress2"
+                android:layout_marginTop="10sp"
+                android:background="#fafafa"
+                android:hint="Address Line 3"
+                android:padding="8sp"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btCreateProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etAddress3"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="#b9baba"
+                android:padding="8sp"
+                android:text="Create"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

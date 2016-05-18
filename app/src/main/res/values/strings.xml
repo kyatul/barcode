@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Quick Barcode Scanner</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="twitter_info">After clicking please wait for moment . It will launch your default browser to authorize this app. You will be redirected back here after authorization.</string>
+
+    <string-array name="list_qr_item">
+        <item >My Profile</item>
+        <item >Free Text</item>
+        <item >Phone</item>
+        <item >Bookmarks</item>
+        <item >Location</item>
+    </string-array>
+    
+    <string-array name="list_qr_icons">
+        <item >@drawable/ic_my_profile</item>
+        <item >@drawable/ic_free_text</item>
+        <item >@drawable/ic_phone</item>
+        <item >@drawable/ic_bookmarks</item>
+        <item >@drawable/ic_location</item>
+    </string-array>
+</resources>

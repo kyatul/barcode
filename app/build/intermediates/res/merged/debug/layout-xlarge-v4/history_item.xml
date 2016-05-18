@@ -1,0 +1,217 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+
+    <LinearLayout
+        android:id="@+id/HslidingPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/headScanHistory"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/slab2" >
+
+            <ImageView
+                android:id="@+id/HivShare"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/share" />
+
+            <Button
+                android:id="@+id/Hshare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/HivShare"
+                android:background="#b9baba"
+                android:paddingRight="10sp"
+                android:text="Share"
+                android:textColor="@android:color/white"
+                android:textSize="50sp" />
+
+            <ImageView
+                android:id="@+id/ivIcon3"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/HsearchGoogle"
+                android:src="@drawable/search" />
+
+            <Button
+                android:id="@id/HsearchGoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#b9baba"
+                android:paddingRight="10sp"
+                android:text="Search"
+                android:textColor="@android:color/white"
+                android:textSize="50sp" />
+        </RelativeLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/Hads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headScanHistory"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-2074945741246452/1891842120" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Hads" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/Hl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginTop="15sp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Type"
+                        android:textSize="60sp" />
+
+                    <TextView
+                        android:id="@+id/HtvType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Type"
+                        android:textSize="55sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Date"
+                        android:textSize="60sp" />
+
+                    <TextView
+                        android:id="@+id/HtvDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Date"
+                        android:textSize="60sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Details"
+                        android:textSize="60sp" />
+
+                    <TextView
+                        android:id="@+id/HtvBarcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Barcode"
+                        android:textSize="60sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Name"
+                        android:textSize="60sp" />
+
+                    <TextView
+                        android:id="@+id/HtvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="No match found"
+                        android:textSize="60sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Category"
+                        android:textSize="60sp" />
+
+                    <TextView
+                        android:id="@+id/HtvCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="No match found"
+                        android:textSize="60sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/line" />
+                    
+                    <TextView
+                        android:id="@+id/HtvHeadOrigin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Country of Origin"
+                        android:textSize="60sp" />
+
+                    <TextView
+                        android:id="@+id/HtvOrigin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="No match found"
+                        android:textSize="60sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/line" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

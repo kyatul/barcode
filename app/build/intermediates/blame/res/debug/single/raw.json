@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/raw/beep.wav",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/raw/beep.wav"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/raw/camera_swap_icon.png",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/raw/camera_swap_icon.png"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/raw/poweredby2x.png",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/raw/poweredby2x.png"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/raw/flashlight_turn_off_icon_pressed.png",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/raw/flashlight_turn_off_icon_pressed.png"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/raw/camera_swap_icon_pressed.png",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/raw/camera_swap_icon_pressed.png"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/raw/flashlight_turn_on_icon.png",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/raw/flashlight_turn_on_icon.png"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/raw/ic_btn_search.png",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/raw/ic_btn_search.png"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/raw/flashlight_turn_off_icon.png",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/raw/flashlight_turn_off_icon.png"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/raw/flashlight_turn_on_icon_pressed.png",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/raw/flashlight_turn_on_icon_pressed.png"
+    }
+]

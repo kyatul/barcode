@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/dialog_rate.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/dialog_rate.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/qr_create.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/qr_create.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/listview_qr_item.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/listview_qr_item.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/search_product.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/search_product.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/history_item.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/history_item.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/dialog_search.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/dialog_search.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/custom_list_history.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/custom_list_history.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/qr_phone.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/qr_phone.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/qr_free_text.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/qr_free_text.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/qr_pick_phone.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/qr_pick_phone.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/qr_location.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/qr_location.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/qr_pick_bookmark.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/qr_pick_bookmark.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/main_three.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/main_three.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/main_two.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/main_two.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/qr.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/qr.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/scan_result.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/scan_result.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/qr_bookmarks.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/qr_bookmarks.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/main_one.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/main_one.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/list_contact_item.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/list_contact_item.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/qr_profile.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/qr_profile.xml"
+    },
+    {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/layout-xlarge-v4/list_bookmark_item.xml",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/layout-xlarge/list_bookmark_item.xml"
+    }
+]
