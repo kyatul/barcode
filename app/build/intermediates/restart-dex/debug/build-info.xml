@@ -4,29 +4,40 @@
     api-level="22"
     density="xhdpi"
     format="7"
-    timestamp="206503799731181" >
+    timestamp="73336048624140" >
 
     <task
         name="javac"
-        duration="18199" />
+        duration="2072" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="791" />
+        duration="184" />
     <task
         name="verifier"
-        duration="75" />
+        duration="56" />
 
     <artifact
-        location="/Users/atul/Workspace/BarcodeScanner/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/resources-debug.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
+        type="DEX" />
 
-    <build timestamp="206503799731181" >
+    <build timestamp="72195337351659" >
         <artifact
             location="/Users/atul/Workspace/BarcodeScanner/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build timestamp="73336048624140" >
+        <artifact
+            location="/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

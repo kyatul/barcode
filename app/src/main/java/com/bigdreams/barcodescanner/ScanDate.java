@@ -3,11 +3,19 @@ package com.bigdreams.barcodescanner;
 import java.util.Date;
 
 public class ScanDate {
-
+	// Saves with timestamp for query purpose in DB
+	// Tue Jun 07 23:23:23
 	public static String getDate(){
 		Date d=new Date();
 		String [] ds=(d.toString()).split("\\s");
 		String dt=ds[0]+" "+ds[1]+" "+ds[2]+" "+ds[3];
+		return dt;
+	}
+
+	// Tue, Jun 07
+	public static String trimDate(String date){
+		String [] ds=(date.toString()).split("\\s");
+		String dt=ds[0]+", "+ds[1]+" "+ds[2];
 		return dt;
 	}
 	

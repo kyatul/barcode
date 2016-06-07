@@ -3,7 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -29,18 +31,25 @@
         android:layout_centerInParent="true"
         android:layout_margin="20sp" >
 
-        <EditText
-            android:id="@+id/etFreeText"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilFreeText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fafafa"
-            android:hint="Enter Free Text"
-            android:padding="25sp"
-            android:textSize="60sp" />
+            android:theme="@style/EditTextTheme">
+
+            <EditText
+                android:id="@+id/etFreeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Free Text"
+                android:padding="25sp"
+                android:textSize="60sp" />
+
+        </android.support.design.widget.TextInputLayout>
 
         <Button
             android:id="@+id/btCreateFreeText"
-            android:layout_below="@id/etFreeText"
+            android:layout_below="@id/tilFreeText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50sp"
@@ -48,7 +57,8 @@
             android:padding="25sp"
             android:text="Create"
             android:textColor="@android:color/white"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:textAllCaps="false"/>
     </RelativeLayout>
 
 </RelativeLayout>

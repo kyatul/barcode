@@ -3,12 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    android:orientation="vertical" >
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="100sp"
-        android:background="#b9baba" >
+        android:background="#b9baba">
 
         <TextView
             android:id="@+id/tvbackQRProfile"
@@ -24,102 +26,154 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="20sp" >
+            android:layout_margin="20sp">
 
-            <EditText
-                android:id="@+id/etFName"
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilFName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20sp"
-                android:background="#fafafa"
-                android:hint="First Name"
-                android:padding="25sp"
-                android:textSize="60sp" />
+                android:theme="@style/EditTextTheme">
 
-            <EditText
-                android:id="@+id/etLName"
+                <EditText
+                    android:id="@+id/etFName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:background="#fafafa"
+                    android:hint="First Name"
+                    android:padding="25sp"
+                    android:textSize="60sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilLName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/etFName"
-                android:layout_marginTop="20sp"
-                android:background="#fafafa"
-                android:hint="Last Name"
-                android:padding="25sp"
-                android:textSize="60sp" />
+                android:layout_below="@id/tilFName"
+                android:theme="@style/EditTextTheme">
 
-            <EditText
-                android:id="@+id/etTelephone"
+
+                <EditText
+                    android:id="@+id/etLName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:hint="Last Name"
+                    android:padding="25sp"
+                    android:textSize="60sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilTelephone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/etLName"
-                android:layout_marginTop="20sp"
-                android:background="#fafafa"
-                android:hint="Telephone"
-                android:inputType="number"
-                android:padding="25sp"
-                android:textSize="60sp" />
+                android:layout_below="@id/tilLName"
+                android:theme="@style/EditTextTheme">
 
-            <EditText
-                android:id="@+id/etEmail"
+                <EditText
+                    android:id="@+id/etTelephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:hint="Telephone"
+                    android:inputType="number"
+                    android:padding="25sp"
+                    android:textSize="60sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilEmail"
+                android:layout_below="@id/tilTelephone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/etTelephone"
-                android:layout_marginTop="20sp"
-                android:background="#fafafa"
-                android:hint="E-mail"
-                android:inputType="textEmailAddress"
-                android:padding="25sp"
-                android:textSize="60sp" />
+                android:theme="@style/EditTextTheme">
 
-            <EditText
-                android:id="@+id/etAddress1"
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress"
+                    android:padding="25sp"
+                    android:textSize="60sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilAddress1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/etEmail"
-                android:layout_marginTop="20sp"
-                android:background="#fafafa"
-                android:hint="Address Line 1"
-                android:padding="25sp"
-                android:textSize="60sp" />
+                android:layout_below="@id/tilEmail"
+                android:theme="@style/EditTextTheme">
 
-            <EditText
-                android:id="@+id/etAddress2"
+                <EditText
+                    android:id="@+id/etAddress1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:hint="Address Line 1"
+                    android:padding="25sp"
+                    android:textSize="60sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilAddress2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/etAddress1"
-                android:layout_marginTop="20sp"
-                android:background="#fafafa"
-                android:hint="Address Line 2"
-                android:padding="25sp"
-                android:textSize="60sp" />
+                android:layout_below="@id/tilAddress1"
+                android:theme="@style/EditTextTheme">
 
-            <EditText
-                android:id="@+id/etAddress3"
+                <EditText
+                    android:id="@+id/etAddress2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:hint="Address Line 2"
+                    android:padding="25sp"
+                    android:textSize="60sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilAddress3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/etAddress2"
-                android:layout_marginTop="20sp"
-                android:background="#fafafa"
-                android:hint="Address Line 3"
-                android:padding="25sp"
-                android:textSize="60sp" />
+                android:layout_below="@id/tilAddress2"
+                android:theme="@style/EditTextTheme">
+
+                <EditText
+                    android:id="@+id/etAddress3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:hint="Address Line 3"
+                    android:padding="25sp"
+                    android:textSize="60sp" />
+
+            </android.support.design.widget.TextInputLayout>
 
             <Button
                 android:id="@+id/btCreateProfile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/etAddress3"
-                android:layout_marginTop="20sp"
+                android:layout_below="@id/tilAddress3"
                 android:layout_marginBottom="20sp"
+                android:layout_marginTop="20sp"
                 android:background="#b9baba"
                 android:padding="25sp"
                 android:text="Create"
+                android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="60sp" />
         </RelativeLayout>

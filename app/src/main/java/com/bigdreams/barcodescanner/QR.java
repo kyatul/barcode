@@ -25,12 +25,14 @@ import com.google.android.gms.ads.AdView;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.WriterException;
 
+import org.w3c.dom.Text;
+
 public class QR extends Activity implements OnClickListener {
 	ImageView imageView;
 	TextView qrText;
 	Bitmap _bitmap;
     ImageView ivShare,ivSave;
-	Button btSave, btShare;
+	TextView btSave, btShare;
 	Typeface tf;
 	String qrData,qrName;
 
@@ -47,8 +49,8 @@ public class QR extends Activity implements OnClickListener {
 
 		qrText = (TextView) findViewById(R.id.qrText);
 		
-		btSave = (Button) findViewById(R.id.btSaveFreeText);
-		btShare = (Button) findViewById(R.id.btShareFreeText);
+		btSave = (TextView) findViewById(R.id.btSaveFreeText);
+		btShare = (TextView) findViewById(R.id.btShareFreeText);
 
         ivShare.setOnClickListener(this);
         ivSave.setOnClickListener(this);

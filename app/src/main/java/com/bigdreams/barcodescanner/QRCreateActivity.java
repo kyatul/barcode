@@ -20,6 +20,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.AdapterView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -28,13 +29,13 @@ import com.google.android.gms.ads.AdView;
 
 public class QRCreateActivity extends Activity implements OnClickListener {
 
-	ListView listQr;
 	TextView tvbackQR;
 	Typeface tf;
 	String[] listTitles;
 	TypedArray listIcons;
 	ArrayList<ListQRItem> listQRItems;
 	ListQRAdapter adapter;
+	LinearLayout llQRLocation, llQRPhone, llQRFreeText, llQRProfile;
 	
 	//private InterstitialAd interstitial;
 	//private AdRequest adRequest;
@@ -54,31 +55,22 @@ public class QRCreateActivity extends Activity implements OnClickListener {
 
 		tf = Typeface.createFromAsset(getAssets(), "fonts/Roboto-Light.ttf");
 
+		llQRPhone = (LinearLayout) findViewById(R.id.llQRPhone);
+		llQRLocation = (LinearLayout) findViewById(R.id.llQRLocation);
+		llQRFreeText = (LinearLayout) findViewById(R.id.llQRFreeText);
+		llQRProfile = (LinearLayout) findViewById(R.id.llQRProfile);
+
+
 		tvbackQR = (TextView) findViewById(R.id.tvbackQR);
 		tvbackQR.setTypeface(tf);
+
 		tvbackQR.setOnClickListener(this);
-		
-		listQr = (ListView) findViewById(R.id.list_qr);
-		
-		listTitles=getResources().getStringArray(R.array.list_qr_item);
-		listIcons=getResources().obtainTypedArray(R.array.list_qr_icons);
-		
-		listQRItems=new ArrayList<ListQRItem>();
-		
-		listQRItems.add(new ListQRItem(listTitles[0], listIcons.getResourceId(0, -1)));
-		listQRItems.add(new ListQRItem(listTitles[1], listIcons.getResourceId(1, -1)));
-		listQRItems.add(new ListQRItem(listTitles[2], listIcons.getResourceId(2, -1)));
-		listQRItems.add(new ListQRItem(listTitles[3], listIcons.getResourceId(3, -1)));
-		listQRItems.add(new ListQRItem(listTitles[4], listIcons.getResourceId(4, -1)));
+		llQRProfile.setOnClickListener(this);
+		llQRLocation.setOnClickListener(this);
+		llQRFreeText.setOnClickListener(this);
+		llQRPhone.setOnClickListener(this);
 
-		// Recycle the typed array
-		listIcons.recycle();
-		
-		adapter = new ListQRAdapter(getApplicationContext(),listQRItems);
-		listQr.setAdapter(adapter);
 
-		listQr.setOnItemClickListener(new ListQRItemClickListener());
-		
 		pref = getSharedPreferences("My App", Context.MODE_PRIVATE);
 		qrCount = pref.getInt(QR_COUNT_int, 0);
 		pref.edit().putInt(QR_COUNT_int, (++qrCount)).commit();
@@ -92,38 +84,27 @@ public class QRCreateActivity extends Activity implements OnClickListener {
 
 	@Override
 	public void onClick(View v) {
-		finish();
-	}
+		switch (v.getId()){
+			case R.id.llQRFreeText:
+				startActivity(new Intent(getApplicationContext(), QRFreeText.class));
+				break;
 
+			case R.id.llQRLocation:
+				startActivity(new Intent(getApplicationContext(), QRLocation.class));
+				break;
 
-	private class ListQRItemClickListener implements
-			ListView.OnItemClickListener {
-		@Override
-		public void onItemClick(AdapterView<?> parent, View view, int position,
-				long id) {
-			selectItem(position);
+			case R.id.llQRPhone:
+				startActivity(new Intent(getApplicationContext(), QRPhone.class));
+				break;
+
+			case R.id.llQRProfile:
+				startActivity(new Intent(getApplicationContext(), QRProfile.class));
+				break;
+
+			default:
+				finish();
 		}
-	}
-	private void selectItem(int position) {
-		if (position == 0) {
-			startActivity(new Intent(getApplicationContext(), QRProfile.class));
-		}
-		
-		
-		if (position == 1) {
-			startActivity(new Intent(getApplicationContext(), QRFreeText.class));
-		}
-		
-		if (position == 2) {
-			startActivity(new Intent(getApplicationContext(), QRPhone.class));
-		}
-		
-		if (position == 3) {
-			startActivity(new Intent(getApplicationContext(), QRBookmark.class));
-		}
-		if (position == 4) {
-			startActivity(new Intent(getApplicationContext(), QRLocation.class));
-		}
+
 	}
 
     @Override

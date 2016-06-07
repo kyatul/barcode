@@ -12,6 +12,7 @@
         android:layout_centerVertical="true"
         android:textSize="25sp"
         android:padding="10sp"
+        android:text="123456789"
         />
  
 </RelativeLayout>

@@ -50,7 +50,8 @@
         android:paddingBottom="10sp"
         android:paddingTop="40sp"
         android:text="Stay in Touch!"
-        android:textSize="28sp" />
+        android:textSize="28sp"
+        android:textColor="@color/text_color"/>
 
     <LinearLayout
         android:id="@+id/Fll"
@@ -87,7 +88,8 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="We love to hear, \n So maybe.. give us a shout at"
-            android:textSize="28sp" />
+            android:textSize="28sp"
+            android:textColor="@color/text_color"/>
 
         <TextView
             android:id="@+id/tMail1"
@@ -96,7 +98,8 @@
             android:gravity="center"
             android:paddingTop="10sp"
             android:text="shout@bigdreamslab.com"
-            android:textSize="28sp" />
+            android:textSize="28sp"
+            android:textColor="@color/text_color"/>
     </LinearLayout>
 
 </RelativeLayout>

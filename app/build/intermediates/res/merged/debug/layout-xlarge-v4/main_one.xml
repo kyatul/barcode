@@ -86,7 +86,8 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_below="@id/iv_button"
-        android:typeface="normal" />
+        android:typeface="normal"
+        android:textColor="@color/text_color"/>
     <ImageView
         android:id="@+id/iv_create"
         android:layout_below="@id/tvInfo"

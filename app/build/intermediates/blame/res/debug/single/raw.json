@@ -20,6 +20,10 @@
         "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/raw/camera_swap_icon_pressed.png"
     },
     {
+        "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/raw/gtm_analytics",
+        "source": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/res/raw/gtm_analytics"
+    },
+    {
         "merged": "/Users/atul/Workspace/BarcodeScanner/app/build/intermediates/res/merged/debug/raw/flashlight_turn_on_icon.png",
         "source": "/Users/atul/Workspace/BarcodeScanner/app/src/main/res/raw/flashlight_turn_on_icon.png"
     },

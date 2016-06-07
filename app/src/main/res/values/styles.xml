@@ -17,4 +17,12 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="EditTextTheme" parent="TextAppearance.AppCompat">
+        <item name="android:paddingTop">4sp</item>
+        <item name="android:textColorPrimary">@color/list_item</item>
+        <item name="android:textColorHint">@color/list_item</item>
+        <item name="colorControlNormal">@color/list_item</item>
+        <item name="colorControlActivated">@color/list_item</item>
+    </style>
+
 </resources>

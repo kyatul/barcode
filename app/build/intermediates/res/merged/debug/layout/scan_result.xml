@@ -1,222 +1,255 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background" >
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:id="@+id/headScanResult"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/slab2" >
+
+        <ImageView
+            android:id="@+id/ivShare"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/share" />
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ivShare"
+            android:background="#b9baba"
+            android:paddingRight="10sp"
+            android:text="Share"
+            android:textColor="@android:color/white"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/ivIcon2"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/searchGoogle"
+            android:src="@drawable/search" />
+
+        <TextView
+            android:id="@id/searchGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#b9baba"
+            android:paddingRight="10sp"
+            android:text="Search"
+            android:textColor="@android:color/white"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headScanResult"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2074945741246452/1891842120" />
 
 
-    <LinearLayout
-        android:id="@+id/slidingPanel"
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/background"
-        android:gravity="left"
-        android:orientation="vertical" >
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginTop="10sp">
 
-        <RelativeLayout
-            android:id="@+id/headScanResult"
-            android:layout_width="match_parent"
-            android:layout_height="60sp"
-            android:layout_alignParentTop="true"
-            android:background="@drawable/slab2" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/ivShare"
-                android:layout_width="50sp"
-                android:layout_height="50sp"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/share" />
-
-            <Button
-                android:id="@+id/share"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toRightOf="@id/ivShare"
-                android:background="#b9baba"
-                android:paddingRight="10sp"
-                android:text="Share"
-                android:textColor="@android:color/white"
-                android:textSize="23sp" />
-
-            <ImageView
-                android:id="@+id/ivIcon2"
-                android:layout_width="50sp"
-                android:layout_height="50sp"
-                android:layout_centerVertical="true"
-                android:layout_toLeftOf="@+id/searchGoogle"
-                android:src="@drawable/search" />
-
-            <Button
-                android:id="@id/searchGoogle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:background="#b9baba"
-                android:paddingRight="10sp"
-                android:text="Search"
-                android:textColor="@android:color/white"
-                android:textSize="23sp" />
-        </RelativeLayout>
-
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/ads"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/headScanResult"
-            ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-2074945741246452/1891842120" />
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/tvRateApp"
-            android:layout_below="@+id/ads" >
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/tvHeadBarcode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:gravity="center_horizontal"
+                android:text="Detail"
+                android:textSize="20sp"
+                android:padding="10sp"
+                android:textColor="@android:color/white"
+                android:background="#989a9a"/>
+
+            <TextView
+                android:id="@+id/tvBarcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="25125786816"
+                android:textSize="23sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:textIsSelectable="true"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvHeadOrigin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Country of Origin"
+                android:textSize="20sp"
+                android:padding="10sp"
+                android:textColor="@android:color/white"
+                android:background="#989a9a"/>
+
+            <TextView
+                android:id="@+id/tvOrigin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="India"
+                android:textSize="23sp"
+                android:layout_marginTop="15sp"
+                android:textIsSelectable="true"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="50">
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="5dp"
+                card_view:cardUseCompatPadding="true">
 
                 <LinearLayout
-                    android:id="@+id/l1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/ads"
-                    android:layout_marginLeft="10sp"
-                    android:layout_marginRight="10sp"
-                    android:layout_marginTop="5sp"
-                    android:orientation="vertical" >
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/tvHeadType"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
+                        android:gravity="center_horizontal"
                         android:text="Type"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        android:padding="10sp"
+                        android:textColor="@android:color/white"
+                        android:background="#989a9a"/>
 
                     <TextView
                         android:id="@+id/tvType"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:text="Type"
-                        android:textSize="18sp" />
+                        android:layout_gravity="center_horizontal"
+                        android:text="EAN"
+                        android:textSize="23sp"
+                        android:layout_marginTop="15sp"
+                        android:textIsSelectable="true"
+                        android:textColor="@android:color/black"/>
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/line" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="50">
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="5dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/tvHeadDate"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
+                        android:gravity="center_horizontal"
                         android:text="Date"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        android:padding="10sp"
+                        android:textColor="@android:color/white"
+                        android:background="#989a9a"/>
+
 
                     <TextView
                         android:id="@+id/tvDate"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:text="Date"
-                        android:textSize="18sp" />
+                        android:layout_gravity="center_horizontal"
+                        android:text="21/05/015"
+                        android:textSize="23sp"
+                        android:layout_marginTop="15sp"
+                        android:textIsSelectable="true"
+                        android:textColor="@android:color/black"/>
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/line" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:text="Details"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/tvBarcode"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:text="Barcode"
-                        android:textSize="18sp" />
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/line" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:text="Name"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/tvName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:text="No match found"
-                        android:textSize="18sp" />
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/line" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:text="Category"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/tvCategory"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:text="No match found"
-                        android:textSize="18sp" />
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/line" />
-                    
-                    <TextView
-                        android:id="@+id/tvHeadOrigin"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:text="Country of Origin"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/tvOrigin"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:text="No match found"
-                        android:textSize="18sp" />
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/line" />
-                    
                 </LinearLayout>
-
-             
-            </LinearLayout>
-        </ScrollView>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
     </LinearLayout>
-
-</FrameLayout>
+</LinearLayout>

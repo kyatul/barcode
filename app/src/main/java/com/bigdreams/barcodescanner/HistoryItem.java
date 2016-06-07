@@ -25,8 +25,8 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
 public class HistoryItem extends Activity implements OnClickListener {
-	TextView tvType, tvBarcode, tvDate, tvName, tvCategory,tvOrigin,tvHeadOrigin;
-	Button searchGoogle,Hshare;
+	TextView tvType, tvBarcode, tvDate,tvOrigin,tvHeadOrigin, tvHeadBarcode, tvHeadType, tvHeadDate ;
+	TextView searchGoogle,Hshare;
 	String date, barcode,type;
 	Typeface tf;
 
@@ -38,23 +38,24 @@ public class HistoryItem extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.history_item);
+		setContentView(R.layout.scan_result);
 
 		hData=new HistoryDatabase(this);
 		
 
 		tf = Typeface.createFromAsset(getAssets(), "fonts/Roboto-Light.ttf");
 
-		tvType = (TextView) findViewById(R.id.HtvType);
-		tvBarcode = (TextView) findViewById(R.id.HtvBarcode);
-		tvDate = (TextView) findViewById(R.id.HtvDate);
-		tvName = (TextView) findViewById(R.id.HtvName);
-		tvCategory = (TextView) findViewById(R.id.HtvCategory);
-		tvOrigin = (TextView) findViewById(R.id.HtvOrigin);
-		tvHeadOrigin = (TextView) findViewById(R.id.HtvHeadOrigin);
+		tvType = (TextView) findViewById(R.id.tvType);
+		tvBarcode = (TextView) findViewById(R.id.tvBarcode);
+		tvDate = (TextView) findViewById(R.id.tvDate);
+		tvOrigin = (TextView) findViewById(R.id.tvOrigin);
+		tvHeadOrigin = (TextView) findViewById(R.id.tvHeadOrigin);
+		tvHeadBarcode = (TextView) findViewById(R.id.tvHeadBarcode);
+		tvHeadType = (TextView) findViewById(R.id.tvHeadType);
+		tvHeadDate = (TextView) findViewById(R.id.tvHeadDate);
 
-        ivIcon3 = (ImageView) findViewById(R.id.ivIcon3);
-        ivHshare = (ImageView) findViewById(R.id.HivShare);
+        ivIcon3 = (ImageView) findViewById(R.id.ivIcon2);
+        ivHshare = (ImageView) findViewById(R.id.ivShare);
 
         ivIcon3.setOnClickListener(this);
         ivHshare.setOnClickListener(this);
@@ -63,15 +64,18 @@ public class HistoryItem extends Activity implements OnClickListener {
 		tvType.setTypeface(tf);
 		tvBarcode.setTypeface(tf);
 		tvDate.setTypeface(tf);
-		tvName.setTypeface(tf);
-		tvCategory.setTypeface(tf);
-		
 
-		searchGoogle = (Button) findViewById(R.id.HsearchGoogle);
+		tvHeadOrigin.setTypeface(tf);
+		tvHeadType.setTypeface(tf);
+		tvHeadBarcode.setTypeface(tf);
+		tvHeadDate.setTypeface(tf);
+
+
+		searchGoogle = (TextView) findViewById(R.id.searchGoogle);
 		searchGoogle.setOnClickListener(this);
 		searchGoogle.setTypeface(tf);
 
-        Hshare = (Button) findViewById(R.id.Hshare);
+        Hshare = (TextView) findViewById(R.id.share);
         Hshare.setOnClickListener(this);
         Hshare.setTypeface(tf);
 
@@ -92,10 +96,8 @@ public class HistoryItem extends Activity implements OnClickListener {
 		cr.moveToFirst();
 		tvType.setText(cr.getString(cr.getColumnIndex(HistoryDatabase.KEY_TYPE)));
 		tvBarcode.setText(cr.getString(cr.getColumnIndex(HistoryDatabase.KEY_CONTENT)));
-		tvDate.setText(cr.getString(cr.getColumnIndex(HistoryDatabase.KEY_TIME)));
-		tvName.setText(cr.getString(cr.getColumnIndex(HistoryDatabase.KEY_NAME)));
+		tvDate.setText(ScanDate.trimDate(cr.getString(cr.getColumnIndex(HistoryDatabase.KEY_TIME))));
 		tvOrigin.setText(cr.getString(cr.getColumnIndex(HistoryDatabase.KEY_STATUS)));
-		tvCategory.setText(cr.getString(cr.getColumnIndex(HistoryDatabase.KEY_CATEGORY)));
 
         barcode = cr.getString(cr.getColumnIndex(HistoryDatabase.KEY_CONTENT));
         type = cr.getString(cr.getColumnIndex(HistoryDatabase.KEY_TYPE));
@@ -120,7 +122,7 @@ public class HistoryItem extends Activity implements OnClickListener {
 		
 		hData.close();
 
-        AdView adView = (AdView)findViewById(R.id.Hads);
+        AdView adView = (AdView)findViewById(R.id.ads);
         AdRequest adRequest = (new AdRequest.Builder()).build();
         adView.loadAd(adRequest);
 	}
@@ -130,12 +132,12 @@ public class HistoryItem extends Activity implements OnClickListener {
 		switch (v.getId()) {
 
 
-        case R.id.HtvBarcode:
+        case R.id.tvBarcode:
              startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(tvBarcode.getText().toString())));
              break;
 
-        case R.id.ivIcon3:
-		case R.id.HsearchGoogle:
+        case R.id.ivIcon2:
+		case R.id.searchGoogle:
 
             if(barcode.substring(0, 2).equals("97")){   //97 STANDS FOR BOOKS
                 Intent dialog = new Intent(this,DialogSearch.class);
@@ -156,8 +158,8 @@ public class HistoryItem extends Activity implements OnClickListener {
             }
 			break;
 
-        case R.id.HivShare:
-        case R.id.Hshare:
+        case R.id.ivShare:
+        case R.id.share:
 
             //SENDING AS QR
             Intent i = new Intent(getApplicationContext(), QR.class);
