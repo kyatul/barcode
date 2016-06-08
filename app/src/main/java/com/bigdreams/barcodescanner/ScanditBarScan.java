@@ -12,7 +12,7 @@ import com.mirasense.scanditsdk.interfaces.ScanditSDKListener;
 public class ScanditBarScan extends Activity implements ScanditSDKListener {
 
 	private ScanditSDK mBarcodePicker;
-	public static final String sScanditSdkAppKey = "z3YezNC/EeKMZlxJI4RhvU63cylwRtyylIGqdWhPP58";
+	public static final String sScanditSdkAppKey = "z3YezNC";
 	
 
 	@Override
